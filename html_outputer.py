@@ -12,7 +12,7 @@ class HtmlOutputer(object):
         fout.write("<html>")
         fout.write('<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />')
         fout.write("<body>")
-        fout.write("<table>")
+        fout.write('<table border="1">')
         for data in self.datas:
             fout.write("<tr>")
             fout.write("<td>%s</td>" % data['url'])
